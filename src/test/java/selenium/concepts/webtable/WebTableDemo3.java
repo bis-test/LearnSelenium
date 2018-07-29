@@ -23,6 +23,7 @@ public class WebTableDemo3 {
 		//No. of Columns
 		List  col = driver.findElements(By.xpath(".//*[@id='leftcontainer']/table/thead/tr/th"));
 		System.out.println("Total No of columns are : " +col.size());
+		
 		//No.of rows
 		List  rows = driver.findElements(By.xpath (".//*[@id='leftcontainer']/table/tbody/tr/td[1]"));
 		System.out.println("Total No of rows are : " + rows.size());

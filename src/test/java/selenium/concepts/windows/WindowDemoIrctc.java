@@ -7,7 +7,7 @@ import java.util.Set;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class WindowHandleIrctc {
+public class WindowDemoIrctc {
 
 	public static void main(String[] args) {
 		//Launch browser

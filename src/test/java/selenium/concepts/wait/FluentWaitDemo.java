@@ -1,5 +1,6 @@
 package selenium.concepts.wait;
 
+
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -33,8 +34,8 @@ public class FluentWaitDemo {
 		// Waiting 30 seconds for an element to be present on the page, checking
 		// for its presence once every 5 seconds.
 		Wait<WebDriver> wait = new FluentWait<WebDriver>(driver)
-				//.withTimeout(30, SECONDS)
-				//.pollingEvery(5, SECONDS)
+				//.withTimeout(30, TimeUnit.SECONDS)
+				//.pollingEvery(5, TimeUnit.SECONDS)
 				.ignoring(NoSuchElementException.class);
 
 		WebElement ele= wait.until(new Function<WebDriver, WebElement>(){

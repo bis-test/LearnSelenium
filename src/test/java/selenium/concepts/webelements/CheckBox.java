@@ -3,7 +3,7 @@ package selenium.concepts.webelements;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class CheckBoxDemo {
+public class CheckBox {
 
 	public static void main(String[] args) {
 

@@ -12,6 +12,9 @@ public class ImplicitWaitDemo {
 		ChromeDriver driver = new ChromeDriver();
 
 		//Set the implicit wait
+		//Timeouts is the interface & implicitwait is the method
+		//This is in Webdriver$timeout class
+		//Timeouts implicitlyWait(long time, TimeUnit unit);
 		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS) ;
 		
 		//Declare variables

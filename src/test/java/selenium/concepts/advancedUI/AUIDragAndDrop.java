@@ -1,13 +1,11 @@
 package selenium.concepts.advancedUI;
 
-
-
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
 
-public class AUIDroppable {
+public class AUIDragAndDrop {
 
 	public static void main(String[] args) {
 
@@ -16,25 +14,18 @@ public class AUIDroppable {
 		ChromeDriver driver= new ChromeDriver();
 
 		//open the jquery site
-		driver.get("https://jqueryui.com/selectable/");
+		driver.get("https://jqueryui.com/droppable/");
 
 		//Switch to frame
 		WebElement frame = driver.findElementByClassName("demo-frame");
 		driver.switchTo().frame(frame);
 
-		WebElement item1 = driver.findElementByXPath("//ol[@id='selectable']/li[1]");
-		WebElement item2 = driver.findElementByXPath("//ol[@id='selectable']/li[2]");
-		WebElement item3 = driver.findElementByXPath("//ol[@id='selectable']/li[3]");
-		WebElement item5 = driver.findElementByXPath("//ol[@id='selectable']/li[5]");
+		WebElement draggable = driver.findElementById("draggable");
+		WebElement droppable = driver.findElementById("droppable");
 
 		Actions builder = new Actions(driver);
-		builder.keyDown(Keys.CONTROL).click(item1)
-		.click(item2)
-		.click(item3)
-		.click(item5)
-		.keyUp(Keys.CONTROL)
-		.perform();
-
+		Action dragdrop= builder.dragAndDrop(draggable, droppable).build();
+		dragdrop.perform();
 
 
 

@@ -12,6 +12,10 @@ public class WebdriverWaitDemo {
 		ChromeDriver driver = new ChromeDriver();
 
 		//Set the webdriver wait
+		//WebDriverWait is a class extends FluentWait class
+		//public class WebDriverWait extends FluentWait<WebDriver>
+		//WeDriverWait() is the constructor with two arguments
+		//public WebDriverWait(WebDriver driver, long timeOutInSeconds)
 		WebDriverWait wait=new WebDriverWait(driver, 20);
 
 		//Declare variables

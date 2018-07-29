@@ -4,7 +4,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 
-public class AUIDragDrop {
+public class AUIDraggable {
 
 	public static void main(String[] args) {
 		
