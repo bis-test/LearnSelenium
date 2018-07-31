@@ -1,0 +1,22 @@
+These are the simple steps which we will follow in our program
+
+Step 1- Load the driver
+
+Step 2-Create a connection
+
+Step 3- Create a statement
+
+Step 4- Execute your query
+
+Step 5- Store the data in Result set
+
+Step 6- Verify whether data (table) is updated or not
+
+NOTE: If you want to connect with local database. Set the DSN in control panel.
+Control Panel > Administrative Tool > Click on ODBC -> Add
+
+
+About the project
+Run the CreateLead.java. It will create a lead in leaftaps
+and then pass the lead id to verify
+We will then query the database and see if the lead id exists.
